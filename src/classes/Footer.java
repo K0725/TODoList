@@ -24,7 +24,6 @@ public class Footer extends JPanel{
         addTask.setBorder(emptyBorder);
         addTask.setFont(new Font("Sans-serif",Font.PLAIN, 20));
         addTask.setVerticalAlignment(JButton.BOTTOM);
-        //addTask.setBackground(Color.white);
         this.add(addTask);
 
 

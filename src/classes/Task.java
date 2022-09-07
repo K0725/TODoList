@@ -18,6 +18,11 @@ public class Task extends JPanel{
 
     private boolean checked;
 
+    /*
+     *Creating preferred size of the task
+     *Set backGround side of the task
+     *
+     */
     Task()
     {
         this.setPreferredSize(new Dimension(400,20));
@@ -28,7 +33,7 @@ public class Task extends JPanel{
         checked = false;
 
         index = new JLabel("");
-        index.setPreferredSize(new Dimension(20,20));
+        index.setPreferredSize(new Dimension(15,10));
         index.setHorizontalAlignment(JLabel.CENTER);
         this.add(index,BorderLayout.WEST);
 
@@ -39,7 +44,7 @@ public class Task extends JPanel{
 
         this.add(taskName,BorderLayout.CENTER);
 
-        done = new JButton("Done");
+        done = new JButton("Done");  // done Button
         done.setPreferredSize(new Dimension(40,20));
         done.setBorder(BorderFactory.createEmptyBorder());
         done.setFocusPainted(false);
